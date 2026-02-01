@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>کوئیز زیست‌شناسی</title>
+<style>
+  body {
+    font-family: Tahoma, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  .question {
+    background: #fff;
+    padding: 15px 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 700px;
+  }
+
+  .question p {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #34495e;
+  }
+
+  .answer {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: #dff0d8;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    color: #2e7d32;
+  }
+
+  button.show-btn {
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #3498db;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  button.show-btn:hover {
+    background: #2980b9;
+  }
+</style>
+</head>
+<body>
+
+<h1>کوئیز زیست‌شناسی</h1>
+
+<div class="question">
+  <p>1️⃣ چند ویژگی موجودات زنده را بنویسید.</p>
+  <button class="show-btn" onclick="toggleAnswer('a1')">نمایش پاسخ</button>
+  <div id="a1" class="answer">تغذیه – تنفس – دفع – تولید مثل</div>
+</div>
+
+<div class="question">
+  <p>2️⃣ انواع تولید مثل غیر جنسی را نام ببرید.</p>
+  <button class="show-btn" onclick="toggleAnswer('a2')">نمایش پاسخ</button>
+  <div id="a2" class="answer">دونیم شدن – جوانه زدن – قطعه قطعه شدن – هاگ زایی</div>
+</div>
+
+<div class="question">
+  <p>3️⃣ منظور از عمل لقاح چیست؟</p>
+  <button class="show-btn" onclick="toggleAnswer('a3')">نمایش پاسخ</button>
+  <div id="a3" class="answer">به ترکیب شدن گامت نر با گامت ماده باهم، و تشکیل سلول تخم، لقاح می‌‌گویند.</div>
+</div>
+
+<div class="question">
+  <p>4️⃣ تولید مثل جنسی را بطور کلی توضیح دهید.</p>
+  <button class="show-btn" onclick="toggleAnswer('a4')">نمایش پاسخ</button>
+  <div id="a4" class="answer">در تولید مثل جنسی گامت نر و گامت ماده باهم ترکیب میشوند و سلول تخم تشکیل می‌شود و سلول تخم بارها تقسیم می‌شود و در نهایت جاندار کاملی تشکیل می‌شود.</div>
+</div>
+
+<div class="question">
+  <p>5️⃣ کار بند ناف چیست؟</p>
+  <button class="show-btn" onclick="toggleAnswer('a5')">نمایش پاسخ</button>
+  <div id="a5" class="answer">بند ناف با رگ‌های خونی‌ای که دارد، بین جنین و دستگاه گردش خون مادر ارتباط ایجاد می‌کند؛ یعنی بند ناف، مواد مغذی و اکسیژن را از مادر به جنین می‌رساند و مواد دفعی جنین را نیز به بدن مادر می‌برد.</div>
+</div>
+
+<div class="question">
+  <p>6️⃣ میوه چگونه به وجود می‌آید؟</p>
+  <button class="show-btn" onclick="toggleAnswer('a6')">نمایش پاسخ</button>
+  <div id="a6" class="answer">از رشد تخمدان ایجاد می‌شود.</div>
+</div>
+
+<div class="question">
+  <p>7️⃣ چند نوع لقاح وجود دارد؟</p>
+  <button class="show-btn" onclick="toggleAnswer('a7')">نمایش پاسخ</button>
+  <div id="a7" class="answer">داخلی و خارجی</div>
+</div>
+
+<div class="question">
+  <p>8️⃣ کپک نان با چه روشی تولید مثل می‌کند؟</p>
+  <button class="show-btn" onclick="toggleAnswer('a8')">نمایش پاسخ</button>
+  <div id="a8" class="answer">با هاگ زایی</div>
+</div>
+
+<script>
+function toggleAnswer(id) {
+  const ans = document.getElementById(id);
+  if(ans.style.display === "none" || ans.style.display === "") {
+    ans.style.display = "block";
+  } else {
+    ans.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
